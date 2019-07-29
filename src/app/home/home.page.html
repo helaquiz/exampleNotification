@@ -1,14 +1,18 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      Ionic Blank
+      Example Notification
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
   <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
+
+    <!-- ปุ่ม Button ที่เรียกฟังก์ชัน onRegisterDevice()  -->
+    <ion-button full (click)="onRegisterDevice()"> Register Device </ion-button>
+    
+    <!-- token ที่เราจะนำแสดงที่หน้าจอเมื่อทำการ Register Device -->
+    <p>Token is {{ token }} </p>
   </div>
 </ion-content>
